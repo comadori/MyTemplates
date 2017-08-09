@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+/* COMMON STYLE LIST ------------------------------------------------------
+
+ 01. LAYOUT
+
+ 02. HEADER
+
+
+ 00. MEDIAQUERY for TABLET
+ 
+ 00. MEDIAQUERY for BIG SP & SMALL TABLET
+ 
+ 00. MEDIAQUERY for SMARTPHONE
+
+-------------------------------------------------------------------- */
+
+
+
+/* 01. COMMON
+-------------------------------------------------------------------- */
+body{
+	min-width:320px;
+	position:relative;
+}
+
+body, input, select, textarea{
+	font-family:Meiryo, Verdana, Arial, sans-serif;
+	-webkit-text-size-adjust:100%; /* For iPhone , iPad */
+}
+
+@font-face {
+font-family: 'FontAwesome';
+src:	url('../fonts/fontawesome-webfont.eot?v=4.3.0');
+src:	url('../fonts/fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'),
+		url('../fonts/fontawesome-webfont.woff2?v=4.3.0') format('woff2'),
+		url('../fonts/fontawesome-webfont.woff?v=4.3.0') format('woff'),
+		url('../fonts/fontawesome-webfont.ttf?v=4.3.0') format('truetype'),
+		url('../fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
+font-weight: normal;
+font-style: normal;
+}
+
+header.global{
+	position:relative;
+	width:100%;
+}
+
+
+
+/* 02. HEADER
+-------------------------------------------------------------------- */
+ul.sNav{ /* for SP */
+	display:none;
+	cursor:pointer;
+}
+
+
+
+/* 05. MEDIAQUERY for TABLET
+-------------------------------------------------------------------- */
+@media screen and (max-width: 1024px) {
+
+}
+
+
+
+/* 06. MEDIAQUERY for BIG SP SMALL TABLET
+-------------------------------------------------------------------- */
+@media screen and (max-width: 767px) {
+	
+}
+
+
+
+/* 07. MEDIAQUERY for SMARTPHONE
+-------------------------------------------------------------------- */
+@media screen and (max-width: 640px) {
+
+	ul.sNav{
+		display:block;
+		padding:10px 0;
+		width:100%;
+		letter-spacing:-0.4em;
+	}
+
+	ul.sNav li{
+		display:inline-block;
+		*display:inline;
+		*zoom:1;
+		letter-spacing:normal;
+		vertical-align:top;
+	}
+
+	nav.gNav{
+		display:none;
+		position:absolute;
+		z-index:1000;
+	}
+
+}
+
+
+/* 00. SEARCH WRAP
+-------------------------------------------------------------------- */
+.searchWrap {
+  text-align: center;
+}
+
+.searchWrap .inner {
+	position: relative;
+	display: inline-block;
+	border: 2px solid #d9d9d9;
+	border-radius: 30px;
+	height: 30px;
+	width: 30px;
+	background:#2980b9;
+	transition: width 0.3s ease-out;
+	backface-visibility: hidden;
+}
+
+.searchWrap .inner.active {
+	width: 300px;
+}
+
+.searchWrap .inner.active .close {
+	opacity: 1;
+}
+
+.searchWrap .inner.active input {
+	width: 220px;
+	color:#fff;
+	background: #2980B9;
+	border-bottom: 1px solid #dadada;
+}
+
+.searchWrap .inner .icon {
+	color: #fff;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	cursor: pointer;
+}
+
+.searchWrap .inner .close {
+	color: #fff;
+	opacity: 0;
+	position: absolute;
+	top:5px;
+	right: 10px;
+	transition: opacity 0.5s ease-out;
+	cursor: pointer;
+}
+
+.searchWrap .inner input {
+	position: absolute;
+	cursor: default;
+	left: 40px;
+	top:3px;
+	width: 0;
+	border: none;
+	outline: none;
+	transition: width 0.2s ease-out;
+}

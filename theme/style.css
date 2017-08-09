@@ -1,0 +1,130 @@
+@charset "utf-8";
+/*
+Theme Name: DEFAULT [ COMADORI ]
+Theme URI: http://www.comadori.com/
+*/
+
+/* RESET CSS -------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    line-height:1.0em;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clearfix:after{ content: "."; display: block; clear: both; visibility:hidden; }
+.clearfix{ width: 100%; } /* clearfix IE 6, 7 */
+
+
+/* DEFAULT
+------------------------------------------------------------------------*/
+html, body{
+	font-family: "Lucida Grande", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo, "メイリオ", sans-serif;
+}
+
+
+/* PAGETOP
+------------------------------------------------------------------------*/
+#pageTop{
+	position:fixed;
+	bottom:20px;
+	right:20px;
+}
+
+
+/* FOOTER
+------------------------------------------------------------------------*/
+.footercontent{
+	margin:25px auto 0;
+	width:100%;
+	text-align:center;
+	border-top:1px solid #C9C9C9;
+}
+
+footer{
+	text-align:center;
+}
+
+footer p.copyright{
+	padding-top:8px;
+	color:#FFF;
+	font-size:0.75em;
+}
+
+
+/* WP DEFAULT STYLE
+------------------------------------------------------------------------*/
+/* Begin Images */
+p img {
+	padding: 0;
+	max-width: 100%;
+	}
+
+/*	Using 'class="alignright"' on an image will (who would've
+	thought?!) align the image to the right. And using 'class="centered',
+	will of course center the image. This is much better than using
+	align="center", being much more futureproof (and valid) */
+
+img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+	}
+
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+	}
+
+.alignright {
+	float: right;
+	}
+
+.alignleft {
+	float: left;
+	}
+/* End Images */

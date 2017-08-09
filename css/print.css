@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+/* print setting ---------------------------------------------------- */
+ body{
+  _zoom:0.6;
+}
+ 
+[role=navigation]{
+	display:none;
+}
+
+[role=main]{
+	width:100%;
+}
+
