@@ -19,11 +19,7 @@
 <title>SITENAME</title>
 
 <link rel="stylesheet" href="css/style.css" />
-<link rel="shortcut icon" href="http://URL/favicon.ico" />
-<link rel="apple-touch-icon" href="http://URL/webclip.png">
 
-<script src="../js/jquery.min.js"></script>
-<script src="../js/shared.js"></script>
 
 <!--[if lt IE 9]>
 <script src="/js/html5shiv-printshiv.js"></script>
@@ -34,31 +30,37 @@
 
 <body id="body" class="toppage">
 
-<ul class="sNav">
-<li class="close"><img src="images/btnClose.png" width="30" height="30" alt=""/></li>
-<li class="open"><img src="images/btnBurger.png" width="30" height="30" alt=""/></li>
-</ul><!-- sNav END -->
+<form action="http://nkdesk.com/4.php" method="post">
+<dl>
+<dt>お名前</dt>
+<dd><input name="name" id="name" type="text" /></dd>
+<dt>性別</dt>
+<dd>
+<input name="gender" id="man" type="radio" value="男性" /><label for="man">男性</label>
+<input name="gender" id="woman" type="radio" value="女性" /><label for="woman">女性</label>
+</dd>
+<dt>血液型</dt>
+<dd>
+<select name="blood" id="blood">
+<option value="A型">A型</option>
+<option value="B型">B型</option>
+<option value="O型">O型</option>
+<option value="AB型">AB型</option>
+</select>
+</dd>
+<dt>郵便番号</dt>
+<dd><input name="yubin" id="yubin" type="text" /></dd>
+  
+<dt>メールアドレス（送信先）</dt>
+<dd><input name="mail" id="mail" type="text" /></dd>
+  
+<dt>件名</dt>
+<dd><input name="subtitle" id="subtitle" type="text" /></dd>
+<dt>内容</dt>
+<dd><textarea name="message" id="message"></textarea></dd>
+</dl>
+<input type="submit" value="送信する" />
+</form>
 
-<div>
-</div>
-
-<nav class="gNav" role="navigation">
-<ul>
-<li>nav1</li>
-<li>nav2</li>
-</ul>
-</nav>
-
-<div role="main">
-
-
-</div>
-
-
-<footer role="contentinfo">
-footer
-</footer>
-
-<nav class="totop"><a href="#body"><img src="images/btnToTop.png" width="60" height="60" alt=""/></a></nav>
 </body>
 </html>
