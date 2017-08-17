@@ -1,0 +1,404 @@
+@charset "utf-8";
+
+/* COMMON STYLE LIST ------------------------------------------------------
+
+ 00. NAME
+
+-------------------------------------------------------------------- */
+
+
+
+/* 01. COMMON STYLE
+-------------------------------------------------------------------- */
+body{
+	min-width:320px;
+	position:relative;
+}
+
+body, input, select, textarea{
+	font-family:Meiryo, Verdana, Arial, sans-serif;
+	word-break:break-strict;
+	-webkit-text-size-adjust:100%; /* For iPhone , iPad */
+}
+
+a{
+	color:#000;
+}
+
+a:hover{
+	color:#333;
+}
+
+section img{
+	max-width:100%;
+	height:auto;
+}
+
+ul.spMenu{
+	display:none;
+}
+
+nav.totop{
+	position:fixed;
+	right: 5%;
+	bottom: 10%;
+	display:none;
+	z-index:2147483647;
+}
+
+h1{
+	padding-bottom:3em;
+	text-align:center;
+}
+
+
+nav.global{
+	background:#83ba36;
+}
+
+nav.global.fix{
+  position:fixed;
+  width:100%;
+  top:0;
+  z-index:9999;
+}
+
+nav.global ul{
+	margin:0 auto;
+	padding:0.8em 0;
+	width:860px;
+	text-align:center;
+	white-space:nowrap;
+}
+
+nav.global ul li{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	letter-spacing:normal;
+}
+
+nav.global ul li a{
+	display:block;
+	padding:0.3em 1em;
+	border-right:1px solid #65a01a;
+}
+
+nav.global ul li a:hover{
+	opacity:0.8;
+}
+
+nav.global ul li:first-child{
+	border-left:1px solid #65a01a;
+}
+
+.lead{
+	margin-top:3em;
+	text-align:center;
+}
+
+.lead p{
+	margin-bottom:0.5em;
+	line-height:2;
+}
+
+
+
+/* 01. FORM LAYOUT
+-------------------------------------------------------------------- */
+dl{
+	margin:2em auto;
+	width:640px;
+	letter-spacing:-0.4em;
+}
+
+dl dt,
+dl dd{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	font-size:0.9em;
+	letter-spacing:normal;
+	vertical-align:top;
+}
+
+dl dt{
+	padding-top:0.5em;
+	width:200px;
+	margin-right:1em;
+}
+
+dl dd{
+	width:440px;
+	widht:-webkit-calc(640px - (220px + 1em));
+	width:-moz-calc(640px - (200px + 1em));
+	width:calc(640px - (200px + 1em));
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"]{
+	padding:0.3em 0.5em;
+	border:1px solid #707070;
+	background:#faf7f5;
+	width: 90%;
+	widht: -webkit-calc(100% - 1em);
+	width: -moz-calc(100% - 1em);
+	width: calc(100% - 1em);
+}
+
+textarea{
+	padding:0.3em 0.5em;
+	width: 90%;
+	widht: -webkit-calc(100% - 1em);
+	width: -moz-calc(100% - 1em);
+	width: calc(100% - 1em);
+	height:150px;
+	font-size:0.88em;
+	border:1px solid #707070;
+	background:#faf7f5;
+}
+
+span.required{
+	font-size:0.8em;
+	color:#BF1920;
+}
+
+p.caption{
+	margin-top:0.5em;
+	color:#707070;
+	text-align:right;
+	font-size:0.75em;
+}
+
+.privacy{
+	padding:1em;
+	margin:0 auto;
+	width:620px;
+	widht:-webkit-calc(640px - 2em);
+	width:-moz-calc(640px - 2em);
+	width:calc(640px - 2em);
+	background:#e6e6e6;
+}
+
+.privacy p{
+	font-size:0.9em;
+	line-height:2;
+}
+
+.privacy p.input{
+	margin-top:1em;
+	text-align:center;
+	font-weight:bold;
+	line-height:1;
+}
+
+.privacy p.input input{
+	margin-right:0.5em;
+}
+form input.submit.disable{
+	cursor: default;
+}
+
+
+
+/* 02. ERROR
+-------------------------------------------------------------------- */
+
+.errorMsg{
+	padding:1em;
+	margin:0 auto;
+	width:620px;
+	widht:-webkit-calc(640px - 2em);
+	width:-moz-calc(640px - 2em);
+	width:calc(640px - 2em);
+	background:#F5DFDF;
+}
+
+.errorMsg p{
+	margin:0.5em 0;
+	font-size:0.9em;
+}
+
+.errorMsg p:before{
+	content:"※ ";
+	color:#BF1920;
+	font-weight:bold;
+}
+
+dl.error *,
+dl.error dt,
+p.input.error{
+	color:#BF1920;
+}
+
+
+dl.error dd input[type="text"],
+dl.error dd input[type="tel"],
+dl.error dd input[type="email"]{
+	border:1px solid #BF1920;
+	background:#F5DFDF;
+}
+
+.button-container{
+	margin:2em 0;
+	text-align:center;
+}
+
+.button-container form{
+	display:inline-block;
+	width:320px;
+}
+
+.button-container form input{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	margin:1em 0;
+}
+
+footer{
+	margin-top:3em;
+	text-align:center;
+	height:150px;
+	border-bottom:3px solid #83ba36;
+}
+
+.social .twitter,
+.social .facebook,
+.social .google{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	vertical-align:top;
+}
+
+.social .twitter{
+	margin-left:80px;
+}
+
+ul.ftNav{
+	font-size:0.95em;
+}
+
+ul.ftNav{
+	margin:2em 0;
+	text-align:center;
+	letter-spacing:-0.4em;
+}
+
+ul.ftNav li{
+	display:inline-block;
+	*display:inline;
+	*zoom:1;
+	letter-spacing:normal;
+}
+
+ul.ftNav li a{
+	color:#000;
+	display:block;
+	padding:0 1em;
+	border-right:1px solid #000;
+}
+
+ul.ftNav li:first-child a{
+	border-left:1px solid #000;
+}
+
+footer p.copyright{
+	font-size:0.8em;
+}
+
+
+/* 07. MEDIAQUERY for SMARTPHONE
+-------------------------------------------------------------------- */
+@media screen and (max-width:859) {
+
+	nav.global ul{
+		width:100%;
+		white-space:normal;
+	}
+
+}
+
+
+/* 07. MEDIAQUERY for SMARTPHONE
+-------------------------------------------------------------------- */
+@media screen and (max-width: 640px) {
+
+	ul.spMenu{
+		display:block;
+		position:absolute;
+		top:1em;
+		right:1em;
+	}
+
+	ul.spMenu li{
+		cursor:pointer;
+	}
+	
+	nav.global{
+		display:none;
+		position:absolute;
+		top:3em;
+		right:1em;
+		z-index:1000;
+		width:60%;
+	}
+	
+	nav.global ul{
+		padding:0;
+		width:auto;
+		text-align:left;
+	}
+	
+	nav.global ul li{
+		display:block;
+		margin:0;
+		padding:0.5em 0;
+		border-top:1px solid #65a01a;
+	}
+	
+	nav.global ul li img{
+		max-width:100%;
+		height:auto;
+	}
+	
+	nav.global ul li:first-child{
+		border-top:none;
+		border-left:none;
+	}
+	
+	nav.global ul li a{
+		border-right:none;
+	}
+
+	.errorMsg{
+		width:80%;
+		widht:-webkit-calc(90% - 2em);
+		width:-moz-calc(90% - 2em);
+		width:calc(90% - 2em);
+	}
+
+	dl{
+		margin:2em auto;
+		width:90%;
+	}
+	
+	dl dt,
+	dl dd{
+		display:block;
+		margin:0 0 0.5em;
+		width:100%;
+	}
+	
+	.privacy{
+		margin:2em auto;
+		width:80%;
+		widht:-webkit-calc(90% - 2em);
+		width:-moz-calc(90% - 2em);
+		width:calc(90% - 2em);
+	}
+
+
+}

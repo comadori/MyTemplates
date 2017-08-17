@@ -12,7 +12,7 @@ $headers .= 'Reply-To: '.$field_email."\r\n";
 $mail_status = mail($mail_to, $subject, $body_message, $headers);
 if ($mail_status) { ?>
     <script language="javascript" type="text/javascript">
-        window.location = 'thanks.html';
+        window.location = 'finish.html';
     </script>
 <?php
 }
